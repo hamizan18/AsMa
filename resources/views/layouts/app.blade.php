@@ -151,8 +151,9 @@
                             <span>Login</span>
                         </a>
                     @else
+                        {{-- DIUBAH: Menambahkan inline-block untuk memastikan link mematuhi padding vertikal --}}
                         <a href="{{ route('profile') }}"
-                            class="text-white hover:text-gray-200 transition duration-200 p-2 rounded-lg"
+                            class="text-white hover:text-gray-200 transition duration-200 px-4 py-2 rounded-lg text-sm font-medium inline-block"
                             title="My Profile">
                             Profile
                         </a>
@@ -160,7 +161,7 @@
                         <form action="{{ route('logout') }}" method="POST" class="inline">
                             @csrf
                             <button type="submit"
-                                class="px-4 py-2 text-sm font-medium text-white bg-red-600/70 rounded-lg hover:bg-red-700 transition duration-200 shadow-md"
+                                class="px-4 py-2 text-sm font-medium text-white bg-red-600/70 rounded-lg hover:bg-red-600 transition duration-200 shadow-md"
                                 title="Logout">
                                 Logout
                             </button>

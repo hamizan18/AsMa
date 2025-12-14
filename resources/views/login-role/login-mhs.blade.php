@@ -64,7 +64,7 @@
                 Let's sign it!
             </p>
 
-            <img src="{{ asset('images/koala.png') }}" alt="Cacing Wisuda AsMa"  class="w-48 h-48 md:w-80 md:h-80 object-contain mb-8">
+            <img src="{{ asset('images/koala.png') }}" alt="Cacing Wisuda AsMa" class="w-48 h-48 md:w-80 md:h-80 object-contain mb-8">
         </div>
 
         <div class="signin-section 
@@ -78,6 +78,10 @@
                 Sign In
             </h2>
 
+            @if(session('error'))
+            <p style="color: red;">{{ session('error') }}</p>
+            @endif
+            
             <form method="POST" action="{{ route('login-mhs') }}" class="space-y-6">
                 @csrf
                 <div class="relative">
@@ -85,14 +89,14 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                     </span>
                     <input type="text" 
-                           placeholder="2024573010015" 
-                           class="w-full input-icon 
-                                  py-3 pr-6 
-                                  rounded-full 
-                                  text-gray-900 
-                                  bg-yellow-100 
-                                  focus:outline-none focus:ring-4 focus:ring-purple-400/50 
-                                  transition duration-300">
+                            name="identifier" placeholder="Masukkan NIM Anda" 
+                            class="w-full input-icon 
+                                    py-3 pr-6 
+                                    rounded-full 
+                                    text-gray-900 
+                                    bg-yellow-100 
+                                    focus:outline-none focus:ring-4 focus:ring-purple-400/50 
+                                    transition duration-300">
                 </div>
 
                 <div class="relative">
@@ -112,7 +116,7 @@
                                 focus:outline-none focus:ring-4 focus:ring-purple-400/50 
                                 transition duration-300">
 
-                                  
+                                    
                     <button type="button" 
                             id="togglePassword" 
                             class="absolute right-4 top-1/2 transform -translate-y-1/2 p-1 text-gray-500 hover:text-purple-600 transition duration-150">

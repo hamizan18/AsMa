@@ -1,3 +1,7 @@
+@extends('layouts.app') 
+
+@section('content')
+
 <style>
     /* Animasi Pulsing sederhana untuk gambar cacing */
     @keyframes pulse-slow-custom {
@@ -56,11 +60,6 @@
     }
 </style>
 <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
-
-
-@extends('layouts.app') 
-
-@section('content')
 
 <main class="flex-grow">
     
