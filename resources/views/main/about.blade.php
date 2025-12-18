@@ -102,7 +102,7 @@
                     <h2 class="text-2xl font-bold text-white mb-4">Punya Pertanyaan?</h2>
                     <p class="text-white/80 mb-6">Jangan ragu untuk menghubungi tim pengembang kami.</p>
                     
-                    <a href="mailto:support@example.com"
+                    <a href="https://wa.me/+6282272967078" target="_blank"
                        class="inline-flex items-center py-3 px-8 rounded-xl font-bold text-white bg-[#2D0C47] shadow-xl shadow-[#2D0C47]/50 
                               hover:bg-[#4B2268] hover:shadow-2xl hover:shadow-[#4B2268]/70 transition duration-300 transform hover:-translate-y-1">
                         <i class="fas fa-envelope mr-3"></i> Hubungi Kami
