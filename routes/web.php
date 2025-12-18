@@ -96,3 +96,5 @@ Route::post('/aspirasi/{id}/report', [AspirationController::class, 'report'])
     // Admin lihar report
 Route::middleware('admin.only')->get('/admin/reports', [AspirationController::class, 'adminReports'])
     ->name('admin.reports.index');
+
+    // testi
